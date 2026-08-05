@@ -1,3 +1,7 @@
-export default function Footer() {
-  return <footer></footer>;
+export default function Navbar() {
+  return (
+    <nav>
+      <h2>Walruop</h2>
+    </nav>
+  );
 }
