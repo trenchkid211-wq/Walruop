@@ -1,8 +1,12 @@
-<h1 style={{color:"red", fontSize:"50px"}}>
-TEST WALRUOP DEPLOY
-</h1>
-  export default function HomePage() {
+export default function HomePage() {
   return (
+    <main style={{ padding: "40px", background: "black", color: "white" }}>
+      <h1 style={{ fontSize: "60px", color: "red" }}>
+        THIS IS THE NEW WALRUOP PAGE
+      </h1>
+    </main>
+  );
+}
     <main className="min-h-screen bg-black text-white">
 
       {/* Hero Section */}
