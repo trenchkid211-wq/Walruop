@@ -1,7 +1,7 @@
-export default function Navbar() {
+export default function Footer() {
   return (
-    <nav>
-      <h2>Walruop</h2>
-    </nav>
+    <footer>
+      <p>© 2026 Walruop</p>
+    </footer>
   );
 }
