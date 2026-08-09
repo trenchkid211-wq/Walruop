@@ -1,103 +1,111 @@
 export default function HomePage() {
   return (
-    <main style={{ padding: "40px", background: "black", color: "white" }}>
-      <h1 style={{ fontSize: "60px", color: "red" }}>
-        THIS IS THE NEW WALRUOP PAGE
-      </h1>
-    </main>
-  );
-}
     <main className="min-h-screen bg-black text-white">
-
-      {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
-        <p className="text-sm tracking-[0.5em] text-gray-400 mb-6">
-          PREMIUM FASHION HOUSE
+      {/* Hero */}
+      <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
+        <p className="mb-6 text-sm tracking-[0.5em] uppercase text-gray-400">
+          Welcome to
         </p>
 
-        <h1 className="text-7xl md:text-9xl font-light tracking-widest">
+        <h1 className="text-6xl md:text-8xl font-light tracking-[0.2em]">
           WALRUOP
         </h1>
 
-        <p className="mt-8 max-w-xl text-gray-300 text-lg leading-relaxed">
-          A modern luxury brand built around identity, creativity and
-          timeless expression.
+        <p className="mt-8 max-w-xl text-gray-400 text-lg leading-relaxed">
+          Fashion. Identity. Movement.
+          <br />
+          A new vision of modern culture.
         </p>
 
-        <button className="mt-10 border border-white px-10 py-4 tracking-widest hover:bg-white hover:text-black transition">
-          EXPLORE COLLECTION
-        </button>
+        <a
+          href="#about"
+          className="mt-12 border border-white px-8 py-4 text-sm tracking-[0.3em] uppercase transition hover:bg-white hover:text-black"
+        >
+          Discover
+        </a>
       </section>
 
-
-      {/* About Section */}
-      <section className="py-24 px-8 md:px-20 border-t border-gray-800">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-gray-400 tracking-widest text-sm mb-5">
-            THE VISION
+      {/* About */}
+      <section
+        id="about"
+        className="min-h-screen flex items-center justify-center px-6 py-24"
+      >
+        <div className="max-w-4xl text-center">
+          <p className="text-sm tracking-[0.4em] uppercase text-gray-500 mb-6">
+            The Vision
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-light leading-tight">
-            Luxury is not about being seen.
-            <br />
-            It is about being remembered.
+          <h2 className="text-4xl md:text-6xl font-light tracking-wide mb-10">
+            Built Different.
           </h2>
 
-          <p className="mt-8 text-gray-400 max-w-2xl">
-            Walruop represents a new generation of elegance,
-            combining fashion, art and digital culture into one
-            distinctive identity.
+          <p className="text-gray-400 text-lg md:text-xl leading-8">
+            WALRUOP is a creative platform built around individuality,
+            fashion, music and culture. We believe style is more than what you
+            wear — it is how you move, create and leave your mark.
           </p>
         </div>
       </section>
 
+      {/* Featured */}
+      <section className="px-6 py-32 border-t border-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-sm tracking-[0.4em] uppercase text-gray-500 mb-6">
+            Featured
+          </p>
 
-      {/* Featured Cards */}
-      <section className="grid md:grid-cols-3 gap-6 px-8 md:px-20 py-24">
+          <h2 className="text-4xl md:text-6xl font-light tracking-wide mb-16">
+            Latest Work
+          </h2>
 
-        <div className="h-96 border border-gray-800 flex items-end p-8 hover:border-white transition">
-          <div>
-            <p className="text-gray-400 text-sm">01</p>
-            <h3 className="text-3xl font-light">
-              COLLECTION
-            </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="aspect-[4/5] border border-gray-800 flex items-center justify-center">
+              <span className="text-gray-600 tracking-[0.3em] text-sm">
+                PROJECT 01
+              </span>
+            </div>
+
+            <div className="aspect-[4/5] border border-gray-800 flex items-center justify-center">
+              <span className="text-gray-600 tracking-[0.3em] text-sm">
+                PROJECT 02
+              </span>
+            </div>
+
+            <div className="aspect-[4/5] border border-gray-800 flex items-center justify-center">
+              <span className="text-gray-600 tracking-[0.3em] text-sm">
+                PROJECT 03
+              </span>
+            </div>
           </div>
         </div>
-
-
-        <div className="h-96 border border-gray-800 flex items-end p-8 hover:border-white transition">
-          <div>
-            <p className="text-gray-400 text-sm">02</p>
-            <h3 className="text-3xl font-light">
-              STORIES
-            </h3>
-          </div>
-        </div>
-
-
-        <div className="h-96 border border-gray-800 flex items-end p-8 hover:border-white transition">
-          <div>
-            <p className="text-gray-400 text-sm">03</p>
-            <h3 className="text-3xl font-light">
-              LEGACY
-            </h3>
-          </div>
-        </div>
-
       </section>
 
+      {/* Contact */}
+      <section className="min-h-[70vh] flex flex-col items-center justify-center text-center px-6 py-24 border-t border-gray-900">
+        <p className="text-sm tracking-[0.4em] uppercase text-gray-500 mb-6">
+          Get In Touch
+        </p>
+
+        <h2 className="text-4xl md:text-6xl font-light tracking-wide">
+          Let's Create.
+        </h2>
+
+        <a
+          href="mailto:walruopmodel@gmail.com"
+          className="mt-10 border border-white px-8 py-4 text-sm tracking-[0.25em] uppercase transition hover:bg-white hover:text-black"
+        >
+          Contact
+        </a>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-gray-800 py-10 text-center">
-        <h2 className="text-2xl tracking-[0.4em]">
-          WALRUOP
-        </h2>
+        <h2 className="text-2xl tracking-[0.4em]">WALRUOP</h2>
 
-        <p className="text-gray-500 mt-4 text-sm">
-          © 2026 Walruop. All rights reserved.
+        <p className="mt-4 text-sm text-gray-600">
+          © {new Date().getFullYear()} WALRUOP. All rights reserved.
         </p>
       </footer>
-
     </main>
   );
 }
